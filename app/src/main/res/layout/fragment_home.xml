@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/userButton"
+        style="@style/blueButtonStyle"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="500dp"
+        android:text="user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adminPanel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/paymentButton"
+        style="@style/blueButtonStyle"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="100dp"
+        android:text="Payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="@id/adminPanel"
+        app:layout_constraintTop_toBottomOf="@id/userButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/donationButton"
+        style="@style/blueButtonStyle"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="100dp"
+        android:text="donation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@id/adminPanel"
+        app:layout_constraintTop_toBottomOf="@id/paymentButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/charityButton"
+        style="@style/blueButtonStyle"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="100dp"
+        android:text="charity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="@id/adminPanel"
+        app:layout_constraintTop_toBottomOf="@id/donationButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/categoryButton"
+        style="@style/blueButtonStyle"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="40dp"
+        android:text="Charity Categories"
+        app:layout_constraintBottom_toTopOf="@+id/sliderButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="@id/adminPanel"
+        app:layout_constraintTop_toBottomOf="@id/charityButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sliderButton"
+        style="@style/blueButtonStyle"
+        android:layout_width="378dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="100dp"
+        android:text="Add Slider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="@id/categoryButton"
+        app:layout_constraintTop_toBottomOf="@+id/categoryButton" />
+
+    <TextView
+        android:id="@+id/adminPanel"
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Admin Panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="36dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.food_charity_system_admin.fragments.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_charityFragment"
+            app:destination="@id/charityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_donationFragment"
+            app:destination="@id/donationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sliderFragment"
+            app:destination="@id/sliderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.food_charity_system_admin.fragments.PaymentFragment"
+        android:label="fragment_charity"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/charityFragment"
+        android:name="com.example.food_charity_system_admin.fragments.CharityFragment"
+        android:label="fragment_donation"
+        tools:layout="@layout/fragment_charity" >
+        <action
+            android:id="@+id/action_charityFragment_to_addCharityFragment"
+            app:destination="@id/addCharityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/donationFragment"
+        android:name="com.example.food_charity_system_admin.fragments.DonationFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_donation" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.food_charity_system_admin.fragments.UserFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/sliderFragment"
+        android:name="com.example.food_charity_system_admin.fragments.SliderFragment"
+        android:label="fragment_slider"
+        tools:layout="@layout/fragment_slider" />
+    <fragment
+        android:id="@+id/addCharityFragment"
+        android:name="com.example.food_charity_system_admin.fragments.AddCharityFragment"
+        android:label="fragment_add_charity"
+        tools:layout="@layout/fragment_add_charity" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.food_charity_system_admin.fragments.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+</navigation>

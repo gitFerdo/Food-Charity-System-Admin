@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddCharityFragment">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edCharityName"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="40dp"
+        android:hint="Charity Name"
+        app:layout_constraintBottom_toTopOf="@+id/edCharityDes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edCharityDes"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="53dp"
+        android:hint="Charity Description"
+        app:layout_constraintBottom_toTopOf="@+id/edCharityPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCharityName" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edCharityPrice"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="48dp"
+        android:hint="Price"
+        app:layout_constraintBottom_toTopOf="@+id/btnSelectCharity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/CharityCategoryDropdoen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="9dp"
+        android:inputType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCharityPrice" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSelectImg"
+        style="@style/blueButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="19dp"
+        app:circularflow_radiusInDP=""
+        android:text="Select Cover Image"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSelectCharity"
+        app:layout_constraintEnd_toStartOf="@+id/btnSelectCharity"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddCharity"
+        style="@style/blueButtonStyle"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="ADD Charity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectCharity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSelectCharity"
+        style="@style/blueButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="175dp"
+        android:text="Select Charity Images"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddCharity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSelectImg"
+        app:layout_constraintTop_toBottomOf="@+id/edCharityPrice" />
+
+    <TextView
+        android:id="@+id/addCharity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ADD charity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/charity_img_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddCharity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectCharity"
+        app:layout_constraintVertical_bias="0.978"
+        tools:listitem="@layout/img_item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "39853235823",
+    "project_id": "food-charity-system-ae8dd",
+    "storage_bucket": "food-charity-system-ae8dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39853235823:android:39141b2ed503045134f79a",
+        "android_client_info": {
+          "package_name": "com.example.food_charity_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39853235823-jepnd72oi5p1b00ins3cun6brkq7kn3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-k3jlxE1jSNxJv9H2Hju2g2F-MDL3DGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39853235823-jepnd72oi5p1b00ins3cun6brkq7kn3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39853235823:android:356c253500d52cd634f79a",
+        "android_client_info": {
+          "package_name": "com.example.food_charity_system_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39853235823-jepnd72oi5p1b00ins3cun6brkq7kn3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-k3jlxE1jSNxJv9H2Hju2g2F-MDL3DGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39853235823-jepnd72oi5p1b00ins3cun6brkq7kn3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
